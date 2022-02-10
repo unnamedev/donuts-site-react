@@ -1,0 +1,50 @@
+.header {
+    box-shadow: 0 1px 5px rgba(142, 142, 142, 0.36);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 400px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @media (min-width: 400px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+
+    a {
+        display: block;
+        font-weight: 700;
+        transition: color 0.3s;
+
+        &:hover,
+        &:focus {
+            color: var(--primary-accent-color);
+        }
+
+    }
+
+    .current {
+        color: var(--primary-accent-color);
+    }
+
+}

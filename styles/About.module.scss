@@ -1,0 +1,21 @@
+.about {
+    padding-top: calc(30px + (70 - 30) * ((100vw - 300px) / (1200 - 300)));
+    padding-bottom: calc(30px + (70 - 30) * ((100vw - 300px) / (1200 - 300)));
+    background-color: #fdf2e7;
+
+    .title {
+        font-size: calc(35px + (45 - 35) * ((100vw - 300px) / (1200 - 300)));
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+
+    .text {
+        max-width: 800px;
+    }
+}
