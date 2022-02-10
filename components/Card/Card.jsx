@@ -13,11 +13,13 @@ const Card = ({donut}) => {
 
     return <li className={styles.card}>
         <div className={styles.image}>
-            <Image src={`https:${thumbnail.fields.file.url}`}
-                   width={thumbnail.fields.file.details.image.width}
-                   height={thumbnail.fields.file.details.image.height}
-                   alt={title}
-            />
+            <Link href={`/menu/${slug}`}>
+                <Image src={`https:${thumbnail.fields.file.url}`}
+                       width={thumbnail.fields.file.details.image.width}
+                       height={thumbnail.fields.file.details.image.height}
+                       alt={title}
+                />
+            </Link>
         </div>
         <h3 className={styles.title}>
             <Link href={`/menu/${slug}`}>{title}</Link>
